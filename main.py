@@ -13,6 +13,7 @@ class Translate:
 
                 # Split content into chunks of 500 characters
                 chunk_size = 500
+
                 chunks = [content[i:i + chunk_size] for i in range(0, len(content), chunk_size)]
 
                 translate = Translator(to_lang=language_option)
